@@ -28,7 +28,7 @@ public class IAccountService implements AccountService {
                 .map(accountNumber -> {
 
                     Account account = new Account();
-                    account.setAccountNumber(accountNumber);
+                    account.setAccountNumber(accountNumber.getNumber());
 
                     account.setUser(user);
                     return account;
