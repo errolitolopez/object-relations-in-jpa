@@ -6,4 +6,6 @@ import java.util.List;
 public interface AccountGateway {
 
     void createAccounts(Long id, List<Account> accounts);
+
+    Account findAccountByAccountNumber(String accountNumber);
 }
